@@ -4,35 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Tela2">
+    tools:context=".Tela4">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="183dp"
+        android:layout_height="62dp"
+        android:rotation="-25"
+        android:rotationX="12"
+        android:rotationY="37"
+        android:text="PAGINA 4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#1D36B3"
+        android:textColorLink="#D81C1C"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/bp4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
 
     <Button
-        android:id="@+id/bp2"
+        android:id="@+id/bp4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PROXIMA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="183dp"
-        android:layout_height="62dp"
-        android:rotation="-25"
-        android:rotationX="12"
-        android:rotationY="37"
-        android:text="PAGINA 2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#1D36B3"
-        android:textColorLink="#D81C1C"
-        android:textSize="34sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/bp2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
-
+        app:layout_constraintVertical_bias="0.499" />
 </androidx.constraintlayout.widget.ConstraintLayout>
