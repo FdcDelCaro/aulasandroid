@@ -12,6 +12,15 @@
         android:theme="@style/Theme.Aulasandroid"
         tools:targetApi="31">
         <activity
+            android:name=".Terceiratelagame"
+            android:exported="false" />
+        <activity
+            android:name=".Seguntatelagame"
+            android:exported="false" />
+        <activity
+            android:name=".gamemoriaprincipal"
+            android:exported="false" />
+        <activity
             android:name=".Resultadocalc"
             android:exported="false" />
         <activity

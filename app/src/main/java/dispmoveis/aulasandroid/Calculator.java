@@ -17,6 +17,7 @@ public class Calculator extends AppCompatActivity {
     Button subtracao;
     Button multiplicar;
     Button dividir;
+    Button jogomemoria;
     TextView tvResultado;
 
 
@@ -30,8 +31,14 @@ public class Calculator extends AppCompatActivity {
         subtracao = findViewById(R.id.subtrair);
         multiplicar = findViewById(R.id.multiplicar);
         dividir = findViewById(R.id.dividir);
+        jogomemoria = findViewById(R.id.jogo);
 
         tvResultado = findViewById(R.id.resultado);
+
+        if (savedInstanceState != null) {
+            numero1.setText(savedInstanceState.getString("numero1"));
+            numero2.setText(savedInstanceState.getString("numero2"));
+        }
 
 
         bEnviar.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +110,26 @@ public class Calculator extends AppCompatActivity {
             }
         });
 
+        jogomemoria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+
+                Intent intent = new Intent(Calculator.this, gamemoriaprincipal.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+    }
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        // Salve os valores dos EditTexts no Bundle
+        outState.putString("numero1", numero1.getText().toString());
+        outState.putString("numero2", numero2.getText().toString());
     }
 }

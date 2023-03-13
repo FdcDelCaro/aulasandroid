@@ -47,6 +47,13 @@
             android:layout_height="wrap_content"
             android:text="dividir" />
 
+        <Button
+            android:id="@+id/jogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jogo da memoria" />
+
+
 
         <TextView
             android:id="@+id/resultado"
