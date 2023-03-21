@@ -12,9 +12,14 @@
         android:theme="@style/Theme.Aulasandroid"
         tools:targetApi="31">
         <activity
+            android:name=".Numerorandom"
+            android:exported="false" />
+        <activity
+            android:name=".Caractertroca"
+            android:exported="false" />
+        <activity
             android:name=".Converdolar"
             android:exported="false" />
-
         <activity
             android:name=".Imccalc"
             android:exported="false" />

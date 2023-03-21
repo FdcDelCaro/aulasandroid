@@ -21,6 +21,11 @@ public class Calculator extends AppCompatActivity {
     Button convertdolar;
 
     Button calcimc;
+
+
+    Button Strings;
+
+    Button random;
     TextView tvResultado;
 
 
@@ -37,6 +42,8 @@ public class Calculator extends AppCompatActivity {
         jogomemoria = findViewById(R.id.jogo);
         convertdolar = findViewById(R.id.cdolar);
         calcimc = findViewById(R.id.imccalc);
+        Strings = findViewById(R.id.strings);
+        random = findViewById(R.id.rand);
 
         tvResultado = findViewById(R.id.resultado);
 
@@ -144,6 +151,24 @@ public class Calculator extends AppCompatActivity {
             }
         });
 
+        Strings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent intent = new Intent(Calculator.this, Caractertroca.class);
+                startActivity(intent);
+            }
+        });
+        random.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent intent = new Intent(Calculator.this, Numerorandom.class);
+                startActivity(intent);
+            }
+        });
 
 
 
