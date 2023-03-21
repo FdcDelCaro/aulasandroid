@@ -53,6 +53,18 @@
             android:layout_height="wrap_content"
             android:text="jogo da memoria" />
 
+        <Button
+            android:id="@+id/cdolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conversão de dolar" />
+
+        <Button
+            android:id="@+id/imccalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular imc" />
+
 
 
         <TextView
