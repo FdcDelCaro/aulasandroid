@@ -42,9 +42,11 @@ public class Converdolar extends AppCompatActivity {
 
                 float resultado = num1 * num2;
 
+                String msg = "---CONVERTIDO---: ";
+                tvResultado.setText(String.valueOf(msg+resultado));
 
 
-                tvResultado.setText(String.valueOf(resultado));
+
             }
         });
     }

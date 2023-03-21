@@ -20,7 +20,7 @@ public class gamemoriaprincipal extends AppCompatActivity {
             textView = findViewById(R.id.texto);
 
             // Gerando letras aleatorias
-            String sequence = generateRandomSequence(10);
+            String sequence = generateRandomSequence(5);
 
             // Exibir sequência na TextView
             textView.setText(sequence);
@@ -34,7 +34,7 @@ public class gamemoriaprincipal extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }
-            }, 1000);
+            }, 10000);
         }
 
         // Método para gerar as letras
